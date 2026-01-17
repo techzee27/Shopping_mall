@@ -1,8 +1,8 @@
 // Configuration for API URL
 // Un-comment the line below for local development
-// const API_BASE_URL = 'http://localhost:8080';
+const API_BASE_URL = 'http://localhost:8080';
 // Un-comment the line below for production (Render) - REPLACE WITH YOUR RENDER URL
-const API_BASE_URL = 'https://shopping-mall-backend.onrender.com';
+// const API_BASE_URL = 'https://shopping-mall-backend.onrender.com';
 
 const entities = {
     malls: {
