@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mall Management System</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="logo">
+                <h2>Mall Manager</h2>
+            </div>
+            <nav>
+                <ul id="nav-list">
+                    <li data-target="dashboard" class="active">Dashboard</li>
+                    <li data-target="malls">Malls</li>
+                    <li data-target="shops">Shops</li>
+                    <li data-target="items">Items</li>
+                    <li data-target="employees">Employees</li>
+                    <li data-target="customers">Customers</li>
+                    <li data-target="orders">Orders</li>
+                    <li data-target="admins">Mall Admins</li>
+                    <li data-target="owners">Shop Owners</li>
+                    <li data-target="users">Users</li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <header>
+                <h1 id="page-title">Dashboard</h1>
+                <div class="user-profile">
+                    <span>Zeeshan Admin</span>
+                    <div class="avatar">Z</div>
+                </div>
+            </header>
+
+            <div id="content-area">
+                <!-- Dynamic Content will be loaded here -->
+                <div class="welcome-card">
+                    <h3>Welcome to the Shopping Mall Management System</h3>
+                    <p>Select a category from the sidebar to manage your data.</p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Modal for Forms -->
+    <div id="modal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2 id="modal-title">Add Entry</h2>
+            <form id="data-form">
+                <!-- Dynamic Form Fields -->
+                <div id="form-fields"></div>
+                <button type="submit" class="btn primary">Save</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast hidden">Operation Successful</div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
